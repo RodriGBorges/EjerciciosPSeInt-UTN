@@ -1,4 +1,4 @@
-//Estructura basica ciclo mientras 
+//Estructura basica Ciclos mientras (???)hacer
 
 Proceso Ciclos2
 	Definir i como entero;

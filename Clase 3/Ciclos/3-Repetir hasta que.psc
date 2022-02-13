@@ -7,6 +7,6 @@ Proceso Ciclos3
 	Repetir
 		Escribir i;
 		i <- i + 1;
-	Hasta Que i>10;
+	Hasta Que i > 10;
 	
 FinProceso
