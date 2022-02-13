@@ -9,8 +9,9 @@ Proceso Ejercicio
 	suma <- 0;
 	
 	Para i <- 1 Hasta N Con Paso 1 Hacer
+		Escribir "Vuelta ", i;
+		Escribir "Se suma: ", suma, " + ", i;
 		suma <- suma + i;
-		Escribir "Vuelta número: ", i, " = ", suma;
 	FinPara
 	
 	Escribir "La suma es: ",suma;
