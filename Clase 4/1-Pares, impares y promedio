@@ -1,0 +1,54 @@
+//Ejercicio 7: Ingresar "N" enteros, visualizar la suma de los
+//números pares de la lista, cuántos números pares
+//existen y cuál es el promedio de los números
+//impares. (Pseudocódigo)
+
+Proceso Ejercicio
+	Definir numElementos, num, i, sumaPares, numPares, sumaImpares, numImpares Como Enteros;
+	
+	Escribir "Digite la cantidad de números que va a ingresar.";
+	Leer numElementos;
+	
+	i <- 1;
+	sumaPares <- 0;
+	numPares <- 0;
+	sumaImpares <- 0;
+	numImpares <- 0;
+	
+	Mientras i <= numElementos Hacer
+		Escribir "Ingrese el número ", i, ":";
+		Leer num;
+		
+		Si num mod 2 = 0 Entonces
+			// El número es par 
+			// Suma total de pares
+			sumaPares <- sumaPares + num;
+			// Conteo de números pares
+			numPares <- numPares + 1;
+		SiNo
+			//El número es impar
+			//Suma total de impares
+			sumaImpares <- sumaImpares + num;
+			numImpares <- numImpares + 1;
+		FinSi
+		
+		i <- i + 1;
+	FinMientras
+	
+	Escribir "Se terminaron de definir todos los números. Estos son los resultados: ";
+	Escribir "";
+	
+	Si numPares = 0 Entonces
+		Escribir "No se han ingresado números pares.";
+	SiNo
+		Escribir "Se contaron ", numPares, " números ingresados como pares.";
+		Escribir "La suma de estos da como resultado: ", sumaPares;
+	FinSi
+	
+	si numImpares = 0 Entonces
+		Escribir "No se han ingresado números impares.";
+	SiNo
+		Escribir "El promedio de los números impares es: ", (sumaImpares / numImpares);
+	FinSi
+	
+FinProceso
